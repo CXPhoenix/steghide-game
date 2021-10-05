@@ -7,7 +7,7 @@
 <stop offset="1" stop-color="#BD34FE"/>
 </linearGradient>
 <!--
-    you-need-check-this-img 的密碼跟 linear gradient 有關，而且跟四張圖片的檔案名稱及順序有極大的關係(裡面的 attributes)，找到的值組合起來，中間不要加空格，就是密碼了！
+    you-need-check-this-img 的密碼跟 linear gradient 有關，而且跟四張圖片的檔案名稱及順序有極大的關係(linearGradient 裡面的 attributes)，找到的值組合起來，中間不要加空格，就是密碼了！
 -->
 <linearGradient id="paint1_linear" x1="194.651" y1="8.81818" x2="236.076" y2="292.989" gradientUnits="userSpaceOnUse">
 <stop stop-color="#FFEA83"/>
