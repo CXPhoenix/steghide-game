@@ -6,6 +6,9 @@
 <stop stop-color="#41D1FF"/>
 <stop offset="1" stop-color="#BD34FE"/>
 </linearGradient>
+<!--
+    the password of you-need-check-this-img is the values of linear gradient x2 y1 x1 y1 combin with no space.
+-->
 <linearGradient id="paint1_linear" x1="194.651" y1="8.81818" x2="236.076" y2="292.989" gradientUnits="userSpaceOnUse">
 <stop stop-color="#FFEA83"/>
 <stop offset="0.0833333" stop-color="#FFDD35"/>
