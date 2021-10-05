@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>不要放棄任何一張圖</title>
   </head>
+
   <body>
     <header class="w-full bg-gray-900 p-10">
       <div class="flex justify-center items-center">
@@ -13,10 +14,87 @@
       </div>
     </header>
     <section>
-      
+      <h2 class="text-center mb-[4vh] mt-[6vh]">請輸入通關密語：</h2>
+      <form>
+        <div class="flex justify-center">
+          <label class="sr-only">通關密語</label>
+          <div class="w-9/12 relative">
+            <input
+              type="text"
+              id="pass"
+              required
+              class="
+                appearance-none
+                rounded-md
+                relative
+                block
+                w-full
+                mb-[5vh]
+                px-3
+                py-2
+                border border-gray-300
+                placeholder-gray-500
+                text-gray-900
+                rounded-t-md
+                focus:outline-none
+                focus:ring-indigo-500
+                focus:border-indigo-500
+                focus:z-10
+                sm:text-sm
+              "
+              placeholder="通關密語"
+            />
+            <img
+              src="./src/assets/you-need-check-this-img.png"
+              alt="warning"
+              id="warning-img"
+              class="hidden absolute opacity-70 right-5 top-2 w-6"
+            />
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <input
+            id="pwdSubmit"
+            type="submit"
+            class="
+              py-3
+              px-8
+              rounded-xl
+              bg-gray-700
+              text-gray-200
+              cursor-pointer
+              hover:bg-gray-500 hover:text-gray-300
+            "
+            value="Submit"
+          />
+        </div>
+      </form>
     </section>
+    <section id="modal" class="hidden fixed top-0 left-0 w-screen h-screen">
+        <div class="bg-gray-900/60 flex justify-center items-center h-full">
+          <div class="bg-white rounded-lg py-10 px-16">
+            <h3 id="modalTitle" class="mb-5">糟糕，發生錯誤</h3>
+            <p id="modalBody" class="mb-5">發生了一點錯誤喔!</p>
+            <div class="flex justify-end items-center">
+              <button
+                id="modalCheckBtn"
+                class="bg-green-600 rounded-md py-1 px-2 mr-3 text-gray-50 hover:bg-green-400 hover:text-gray-200"
+              >
+                確認
+              </button>
+              <button
+                id="modalCancelBtn"
+                class="bg-red-500 rounded-md py-1 px-2 text-gray-50 hover:bg-red-400 hover:text-gray-200"
+                onclick="document.querySelector('#modal').classList.add('hidden')"
+              >
+                取消
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     <footer class="fixed bottom-0 right-0 left-0 flex justify-center">
-      <img class="block" src="./src/assets/powered-by-vitawind-bright.png">
+      <img class="block" src="./src/assets/powered-by-vitawind-bright.png" />
     </footer>
     <script type="module" src="./src/main.js"></script>
   </body>
